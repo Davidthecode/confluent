@@ -1,0 +1,31 @@
+{
+  "name": "financial-mcp",
+  "version": "1.0.0",
+  "description": "Unified MCP server for financial tools",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/mcp-server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/mcp-server.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@upstash/redis": "^1.35.4",
+    "axios": "^1.12.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "resend": "6.0.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.6.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
