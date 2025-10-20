@@ -1,12 +1,10 @@
-# **Confluent - AI-Powered Accounting Integration**
+# **Confluent - Intelligent Accounting Integration**
 
 <div align="center">
   <img src="client/public/confluent.png" alt="confluent Logo" width="120" height="120" style="border-radius: 50%;">
   
-  **An Accounting AI-powered agent that allows for AI-driven financial workflows**
+  **An accounting automation agent for seamless financial workflows**
 </div>
-
-An AI-driven MCP and agent for seamless accounting data access and automation with Zoho and Xero
 
 ---
 
