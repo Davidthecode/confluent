@@ -9,7 +9,7 @@
 ---
 
 ## **Overview**
-Confluent is an innovative solution built for the ADK-TS Hackathon 2025, providing a Model Context Protocol (MCP) server and AI agent to integrate with Zoho and Xero accounting platforms. It enables developers to create AI-driven financial workflows, offering seamless access to accounting data, invoice creation, and automated email notifications, all powered by the ADK-TS framework.
+Confluent is an innovative solution built for the ADK-TS Hackathon 2025, providing a Model Context Protocol (MCP) server and AI agent to integrate with Zoho and Xero accounting platforms. It enables users to create AI-driven financial workflows, offering seamless access to accounting data, invoice creation, and automated email notifications, all powered by the ADK-TS framework.
 
 ---
 
