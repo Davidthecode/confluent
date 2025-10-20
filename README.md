@@ -71,8 +71,8 @@ Confluent is structured into three core components:
 ### **Installation**
 ```bash
 # Clone the repository
-git clone https://github.com/Davidthecode/financialsync.git
-cd financialsync
+git clone https://github.com/Davidthecode/confluent.git
+cd confluent
 
 
 # Set up environment variables
