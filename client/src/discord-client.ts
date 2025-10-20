@@ -29,8 +29,6 @@ client.on("messageCreate", async (message) => {
     return;
   }
 
-  // restrict to a specific channel
-  // wed diaable this for public use
   if (DISCORD_CHANNEL_ID && message.channelId !== DISCORD_CHANNEL_ID) {
     return;
   }
@@ -41,6 +39,8 @@ client.on("messageCreate", async (message) => {
   }
 
   const userId = message.author.id;
+
+  await message.channel.sendTyping();
 
   try {
     const response = await axios.post(AGENT_URL, {
