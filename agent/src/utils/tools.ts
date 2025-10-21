@@ -73,7 +73,16 @@ export async function handleAuthOrTenantError(
     console.log("tenant mcp res in agent ==>", tenantsRes);
     if (tenantsRes.success && tenantsRes.data?.tenants) {
       const tenantsList = tenantsRes.data.tenants;
-      const tenantsStr = tenantsList.map((t: any) => `- ID: ${t.tenantId}, Name: ${t.tenantName}`).join("\n");
+
+      const normalizedTenants = tenantsList.map((t: any) => ({
+        id: t.tenantId ?? t.id,
+        name: t.tenantName ?? t.name,
+      }));
+
+      const tenantsStr = normalizedTenants
+        .map((t: any) => `- ID: ${t.id}, Name: ${t.name}`)
+        .join("\n");
+
       return {
         success: false,
         error: `Tenant selection required for ${platform}. Please choose an organization from the list below and provide the ID:\n${tenantsStr}\nOnce you provide the ID, I'll set it and you can retry your request.`
